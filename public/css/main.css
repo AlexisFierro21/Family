@@ -1,0 +1,50 @@
+
+.navbar-default{
+	background-color: #2f96da !important;
+}
+.body{
+	background-color: #FFFFFF !important;
+	height: 100%;
+}
+.loginn{
+	margin-top: 5% !important;
+}
+.title{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 5em;
+	margin-top: 5%;
+	font-family: 'Artifika', serif;
+}
+.navbar-default {
+    background-color: #ffffff !important;
+    border-color: #d3e0e9; 
+}
+.contaner{
+	margin-top: 8%;
+}
+    .bs-example{
+    	margin: 20px;
+    }
+/********************************************************************************************************************/
+@media (max-width: 576px) { 
+	.loginn{
+		margin-top: 10% !important;
+	}
+	.title{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 5%;
+	font-family: 'Artifika', serif;
+}
+
+.contaner{
+	margin-top: 25%;
+}
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }	

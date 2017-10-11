@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{setting('site.title')}}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 100vh;
+                height: 100%;
                 margin: 0;
             }
 
@@ -65,9 +65,9 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" >
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="top-right links" style="background-color:#2f96da">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -76,18 +76,17 @@
                     @endauth
                 </div>
             @endif
-
+                
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{setting('site.title')}}
                 </div>
-
+                
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://laravel.com/docs">Contaco</a>
+                    <a href="https://laracasts.com">Acerca de...</a>
+                    <a href="{{ route('login') }}">iniciar Sesion</a>
+                    <a href="https://laracasts.com">Acerca de...</a>
                 </div>
             </div>
         </div>
