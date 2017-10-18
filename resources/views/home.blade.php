@@ -21,7 +21,7 @@
                     @foreach ($roles as $role)
                     
                         <option value="{{$role->id}}">{{$role->name}}</option>
-                    
+                   
                     @endforeach
                     </select>
                     You are logged in!
